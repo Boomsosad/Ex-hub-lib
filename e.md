@@ -1,8 +1,5 @@
 -------------------------BF-------------------------
 
-wait(1)
-
-if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7449423635 then
 local RadientPaid = {}
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -3271,3 +3268,13 @@ end
 		game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
 		game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
 	end
+
+	local win = RadientPaid:Window("")
+
+	local serv = win:Server("Boom Hub V.1.0.0", "")
+
+	local AutoFram = serv:Channel("Auto Farm")
+
+	AutoFram:Toggle("Auto New World",false,function(vu)
+     print("ez")
+    end)
