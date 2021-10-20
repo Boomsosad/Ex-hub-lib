@@ -3268,13 +3268,3 @@ end
 		game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
 		game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
 	end
-
-	local win = RadientPaid:Window("")
-
-	local serv = win:Server("Boom Hub V.1.0.0", "")
-
-	local AutoFram = serv:Channel("Auto Farm")
-
-	AutoFram:Toggle("Auto New World",false,function(vu)
-     print("ez")
-    end)
