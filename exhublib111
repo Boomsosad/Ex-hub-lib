@@ -93,7 +93,7 @@ game:GetService("UserInputService").InputBegan:connect(function(inputObject, gam
    end
 end)
 
-function RadientPaid:Window(text,maincolor)
+function RadientPaid:Window(text)
 
    local currentservertoggled = ""
    local minimized = false
